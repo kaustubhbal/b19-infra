@@ -8,11 +8,11 @@ module "rds" {
 
 module "eks" {
     source = "./modules/eks"
-    project = "dyl"
-    desired_nodes = 2
-    max_nodes = 2
-    min_nodes = 2
-    node_instance_type = "t3.medium"
+    project = var.project
+    desired_nodes = var.desired
+    max_nodes = var.max
+    min_nodes = var.min
+    node_instance_type = var.instance_type
 }
 
 module "s3" {

@@ -1,0 +1,5 @@
+max=7
+min=4
+desired=2
+project="dyl"
+instance_type="t2.xlarge"
